@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#ad5389 , #3c1053);
+}
+#calculator{
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: black;
+    margin: 50px;
+    margin-left: 500px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+#history{
+    height: 20%;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+#historyValue{
+    font-size: 20px;
+    font-weight: 400;
+   padding-top: 10px;
+}
+#outputValue{
+    font-size: 34px;
+    font-weight: 700;
+    color: violet;
+}
+#keyboard{
+    height: 80%;
+}
+#keyboard > .number ,
+#keyboard > .oparator{
+    float: left;
+    height: 25%;
+    width: 33.33%;
+    background-color: rgb(12, 10, 10);
+    border: 1px solid rgb(29, 29, 29);
+    color: azure;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#keyboard > .number:hover ,
+#keyboard > .oparator:hover{
+    background-color: violet;
+    transform: scale(1.1);
+}
+#keyboard > .number:active ,
+#keyboard > .oparator:active{
+    font-size: 13px;
+}
+#key_operator{
+    height: auto;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 220px;
+    left: 853px;
+}
+.oparator{
+    height: 45px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: violet;
+}
+.oparator:hover{
+    background-color: rgb(12, 10, 10) ;
+}
+.oparator:active{
+    font-size: 8px;
+}
